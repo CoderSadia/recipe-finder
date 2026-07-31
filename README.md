@@ -4,7 +4,7 @@ A recipe search app built with Flask, HTML/CSS/JS, and the TheMealDB API. Used t
 
 ## Screenshot
 
-![Recipe Finder screenshot](screenshots/cucumber salad.png)
+![Recipe Finder screenshot](screenshots/cucumber%20salad.png)
 
 ## What the app does
 - Search recipes by name or ingredient

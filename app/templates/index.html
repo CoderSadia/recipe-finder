@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Finder</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="hero">
+  <h1>🍲 Recipe Finder</h1>
+  <p>Search thousands of recipes from around the world</p>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search for a dish, e.g. chicken, pasta, cake...">
+    <button id="searchBtn">Search</button>
+  </div>
+</header>
+
+<main>
+  <div id="loading" class="loading hidden">Loading recipes...</div>
+  <div id="noResults" class="no-results hidden">No recipes found. Try another search.</div>
+  <div id="results" class="grid"></div>
+</main>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal" class="close-btn">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
